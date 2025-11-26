@@ -86,8 +86,8 @@ export default function HeroSection() {
             </div>
           </div>
 
-          <div className="relative hidden lg:block">
-            <div className="relative w-full h-[600px] rounded-2xl overflow-hidden shadow-2xl">
+          <div className="relative">
+            <div className="relative w-full h-[400px] sm:h-[500px] lg:h-[600px] rounded-2xl overflow-hidden shadow-2xl">
               <div className="absolute inset-0 bg-gradient-to-br from-[#3fbeb0]/20 to-transparent"></div>
               <img
                 src="/socio-estheticienne.png"
