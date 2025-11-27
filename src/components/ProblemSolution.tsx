@@ -78,23 +78,6 @@ export default function ProblemSolution() {
             </div>
           </div>
         </div>
-
-        <div className="bg-gradient-to-r from-[#027199] to-[#3fbeb0] rounded-2xl p-8 md:p-12 text-white">
-          <div className="grid md:grid-cols-3 gap-8 text-center">
-            <div>
-              <div className="text-5xl font-bold mb-2">85%</div>
-              <p className="text-white/90">Des résidents notent une amélioration de leur bien-être</p>
-            </div>
-            <div>
-              <div className="text-5xl font-bold mb-2">3x</div>
-              <p className="text-white/90">Plus d'acceptation des soins médicaux après accompagnement</p>
-            </div>
-            <div>
-              <div className="text-5xl font-bold mb-2">100%</div>
-              <p className="text-white/90">Complémentaire à votre projet thérapeutique pluridisciplinaire</p>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
