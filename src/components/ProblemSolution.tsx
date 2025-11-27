@@ -78,6 +78,12 @@ export default function ProblemSolution() {
             </div>
           </div>
         </div>
+
+        <div className="bg-gradient-to-r from-[#027199] to-[#3fbeb0] rounded-2xl p-8 md:p-12 text-white">
+          <p className="text-lg md:text-xl leading-relaxed text-center">
+            Parce que l'estime de soi est un droit universel, j'accompagne tous les publics fragilisés, sans distinction sociale. De la grande précarité au milieu carcéral, mes protocoles s'adaptent avec bienveillance à chaque parcours de vie pour restaurer la dignité au sein de vos structures.
+          </p>
+        </div>
       </div>
     </section>
   );
