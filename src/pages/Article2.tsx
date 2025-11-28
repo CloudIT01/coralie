@@ -1,7 +1,10 @@
 import { ArrowLeft, Calendar, Clock, User } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useScrollToSection } from '../hooks/useScrollToSection';
 
 export default function Article2() {
+  const scrollToSection = useScrollToSection();
+
   return (
     <div className="min-h-screen bg-white">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -152,9 +155,7 @@ export default function Article2() {
               Contactez-moi pour explorer comment ces soins complémentaires peuvent bénéficier à votre établissement.
             </p>
             <button
-              onClick={() => {
-                window.location.href = '/#contact';
-              }}
+              onClick={() => scrollToSection('contact')}
               className="bg-white text-[#027199] px-8 py-3 rounded-lg font-semibold hover:bg-[#09303b] hover:text-white transition-all duration-300"
             >
               Prendre contact

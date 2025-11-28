@@ -1,7 +1,9 @@
 import { Calendar, Clock, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useScrollToSection } from '../hooks/useScrollToSection';
 
 export default function Blog() {
+  const scrollToSection = useScrollToSection();
   const articles = [
     {
       id: 1,
@@ -115,9 +117,7 @@ export default function Blog() {
             </div>
             <div className="text-center md:text-right">
               <button
-                onClick={() => {
-                  window.location.href = '/#contact';
-                }}
+                onClick={() => scrollToSection('contact')}
                 className="bg-white text-[#027199] px-8 py-4 rounded-lg font-semibold text-lg hover:bg-[#09303b] hover:text-white transition-all duration-300 shadow-xl inline-flex items-center space-x-2"
               >
                 <span>Organiser une rencontre</span>

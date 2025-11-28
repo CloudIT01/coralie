@@ -1,15 +1,15 @@
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
+import { useScrollToSection } from '../hooks/useScrollToSection';
+import { Link } from 'react-router-dom';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const scrollToSection = useScrollToSection();
 
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      setIsMenuOpen(false);
-    }
+  const handleScroll = (id: string) => {
+    scrollToSection(id);
+    setIsMenuOpen(false);
   };
 
   return (
@@ -28,31 +28,31 @@ export default function Header() {
 
           <nav className="hidden md:flex items-center space-x-8">
             <button
-              onClick={() => scrollToSection('accueil')}
+              onClick={() => handleScroll('accueil')}
               className="text-[#09303b] hover:text-[#027199] transition-colors font-medium"
             >
               Accueil
             </button>
             <button
-              onClick={() => scrollToSection('approche')}
+              onClick={() => handleScroll('approche')}
               className="text-[#09303b] hover:text-[#027199] transition-colors font-medium"
             >
               Mon Approche
             </button>
             <button
-              onClick={() => scrollToSection('services')}
+              onClick={() => handleScroll('services')}
               className="text-[#09303b] hover:text-[#027199] transition-colors font-medium"
             >
               Services Pro
             </button>
             <button
-              onClick={() => scrollToSection('blog')}
+              onClick={() => handleScroll('blog')}
               className="text-[#09303b] hover:text-[#027199] transition-colors font-medium"
             >
               Blog
             </button>
             <button
-              onClick={() => scrollToSection('contact')}
+              onClick={() => handleScroll('contact')}
               className="bg-[#027199] text-white px-6 py-2.5 rounded-lg hover:bg-[#09303b] transition-colors font-medium"
             >
               Contact
@@ -70,31 +70,31 @@ export default function Header() {
         {isMenuOpen && (
           <div className="md:hidden py-4 space-y-3 border-t border-gray-100">
             <button
-              onClick={() => scrollToSection('accueil')}
+              onClick={() => handleScroll('accueil')}
               className="block w-full text-left py-2 text-[#09303b] hover:text-[#027199] transition-colors font-medium"
             >
               Accueil
             </button>
             <button
-              onClick={() => scrollToSection('approche')}
+              onClick={() => handleScroll('approche')}
               className="block w-full text-left py-2 text-[#09303b] hover:text-[#027199] transition-colors font-medium"
             >
               Mon Approche
             </button>
             <button
-              onClick={() => scrollToSection('services')}
+              onClick={() => handleScroll('services')}
               className="block w-full text-left py-2 text-[#09303b] hover:text-[#027199] transition-colors font-medium"
             >
               Services Pro
             </button>
             <button
-              onClick={() => scrollToSection('blog')}
+              onClick={() => handleScroll('blog')}
               className="block w-full text-left py-2 text-[#09303b] hover:text-[#027199] transition-colors font-medium"
             >
               Blog
             </button>
             <button
-              onClick={() => scrollToSection('contact')}
+              onClick={() => handleScroll('contact')}
               className="block w-full text-left py-2 bg-[#027199] text-white px-4 rounded-lg hover:bg-[#09303b] transition-colors font-medium"
             >
               Contact
