@@ -38,8 +38,8 @@ export default function HeroSection() {
                   <Heart size={20} className="text-[#3fbeb0]" />
                 </div>
                 <div>
-                  <h3 className="font-semibold mb-1">Estime de soi</h3>
-                  <p className="text-sm text-white/80">Restaurer la confiance et l'image de soi</p>
+                  <h3 className="font-semibold mb-1">Facilitation des soins</h3>
+                  <p className="text-sm text-white/80">Meilleures expériences pour vos patients</p>
                 </div>
               </div>
 
