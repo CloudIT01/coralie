@@ -53,7 +53,7 @@ export default function AboutCoralie() {
                 </div>
                 <h3 className="font-semibold text-[#09303b] mb-2">Proximité locale</h3>
                 <p className="text-sm text-[#678187]">
-                  Basée à Castelnaudary, j'interviens dans un rayon de 30km pour être au plus près de vos besoins
+                  Basée à Villefranche-de-Lauragais, j'interviens dans un rayon de 30km pour être au plus près de vos besoins
                 </p>
               </div>
 

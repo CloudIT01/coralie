@@ -52,7 +52,7 @@ export default function Footer() {
                 </div>
                 <div>
                   <h3 className="font-semibold mb-1">Zone d'intervention</h3>
-                  <p className="text-white/80">Castelnaudary et 30km aux alentours</p>
+                  <p className="text-white/80">Villefranche-de-Lauragais et 30km aux alentours</p>
                 </div>
               </div>
 
@@ -204,7 +204,7 @@ export default function Footer() {
               </div>
               <div>
                 <p className="font-semibold">Coralie - Socio-Esthéticienne</p>
-                <p className="text-sm text-white/60">Castelnaudary et alentours</p>
+                <p className="text-sm text-white/60">Villefranche-de-Lauragais et alentours</p>
               </div>
             </div>
 
